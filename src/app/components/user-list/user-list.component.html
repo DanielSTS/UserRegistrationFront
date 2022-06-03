@@ -1,0 +1,30 @@
+<div class="container">
+  <div class="jumbotron">
+    <h1 class="display-6">Usuários</h1>
+    <p class="lead-1">Listagem de Usuários</p>
+    <hr class="my-2">
+    <div class="input-group">
+    <a class="btn btn-outline-primary btn-sm" routerLink="/users">Adicionar</a>
+  </div>
+<table class="table table-striped">
+    <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Nome</th>
+      <th scope="col">Email</th>
+      <th scope="col">Phone</th>
+      <th scope="col">CPF</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let item of users; index as i">
+      <th scope="row">{{ i + 1 }}</th>
+      <td>{{ item.name}}</td>
+      <td>{{ item.email }}</td>
+      <td>{{ item.phone }}</td>
+      <td>{{ item.cpf }}</td>
+    </tr>
+    </tbody>
+  </table>
+  </div>
+</div>

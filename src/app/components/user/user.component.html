@@ -1,0 +1,28 @@
+<div class="container">
+  <div class="jumbotron">
+      <h1 class="display-6">Usuário</h1>
+      <p class="lead-1">Inclusão de um usuário</p>
+      <hr class="my-2">
+
+      <div class="col-12">
+          <label for="iDescricao" class="form-label">Nome</label>
+          <input type="text" [(ngModel)]="name" class="form-control" id="iDescricao" placeholder="Informe seu nome">
+      </div>
+      <div class="col-12">
+          <label for="iDescricao" class="form-label">email</label>
+          <input type="text" [(ngModel)]="email" class="form-control" id="iDescricao" placeholder="Informe seu email">
+      </div>
+      <div class="col-12">
+          <label for="iDescricao" class="form-label">phone</label>
+          <input type="text" [(ngModel)]="phone" class="form-control" id="iDescricao" placeholder="Informe seu phone">
+      </div>
+      <div class="col-12">
+          <label for="iDescricao" class="form-label">cpf</label>
+          <input type="text" [(ngModel)]="cpf" class="form-control" id="iDescricao" placeholder="Informe seu cpf">
+      </div>
+    <br>
+      <div class="d-grid gap-2 d-md-flex ">
+          <button class="btn btn-outline-primary me-md-2" (click)="save()" type="button">Confirmar</button>
+          <a routerLink="/userlist" class="btn btn-outline-secondary">Cancelar</a>
+      </div> 
+  </div>
